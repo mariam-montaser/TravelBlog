@@ -1,0 +1,6 @@
+{
+    "env": {
+        "MONGO_ATLAS_PASS": "Py3k9DET50nnDQxR",
+        "JWT_SECRET_KEY": "This_is_the_secret_key_for_jsonwebtoken"
+    }
+}

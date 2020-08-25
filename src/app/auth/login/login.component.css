@@ -1,0 +1,18 @@
+mat-card{
+    width: 80%;
+    margin: auto;
+}
+
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+mat-spinner{
+  margin: 1rem auto;
+}

@@ -1,0 +1,22 @@
+<mat-toolbar color="primary">
+    <span class="title">
+        <a class="mat-body-strong" mat-button color="accent" routerLink="">
+            TravelBlog
+        </a>
+    </span>
+    <span class="spacer"></span>
+    <ul>
+        <li *ngIf="userIsAuth">
+            <a mat-button routerLink="/create" routerLinkActive="mat-accent">New Post</a>
+        </li>
+        <li *ngIf="!userIsAuth">
+            <a mat-button routerLink="/auth/login" routerLinkActive="mat-accent">Login</a>
+        </li>
+        <li *ngIf="!userIsAuth">
+            <a mat-button routerLink="/auth/signup" routerLinkActive="mat-accent">Sign Up</a>
+        </li>
+        <li *ngIf="userIsAuth">
+            <button type="button" mat-button (click)="onLogout()">Logout</button>
+        </li>
+    </ul>
+</mat-toolbar>
